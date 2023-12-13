@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic tac toe Game</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            background-color: grey;
+        }
+        center{
+            margin-top: 15%;
+        }
+        .game{
+            height: 10rem;
+            width: 10rem;
+            /* border: 2px solid red; */
+            margin-left: 20%;
+            margin-right: 20%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap:0.5rem ;
+            
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            height: 8vmin;
+            border-radius: 20px;
+            box-shadow: 2px 2px 5px rgb(29, 25, 25);
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+            color: white;
+        }
+        h3{
+            margin-top: 1%;
+        }
+        .rst-but{
+            margin-top: 2.5%;
+            button{
+                cursor: pointer;
+                background-color:rgb(46, 46, 46);
+                color: white;
+                padding: 0.8%;
+                border: none;
+                border-radius:5px ;
+                box-shadow: 2px 2px 10px rgb(46, 44, 44);
+            }
+        }
+        .winnertag{
+            margin-top: 5%;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Tic-Tac-Toe</h1>
+        <div class="game">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+        </div>
+        <h1 class="winnertag">mera winner</h1>
+        <h3 class="rst-but"><button class="reset">Reset Game</button></h3>
+    </center>
+</body>
+<script src="java.js"></script>
+</html>
